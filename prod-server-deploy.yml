@@ -11,10 +11,10 @@
      state: present
 
   - name: start docker service
-     service:
-      name: docker
-      state: started
-      enabled: true
+    service:
+     name: docker
+     state: started
+     enabled: true
 
   - name: deploy to prod server
     command: docker run -itd -p 8081:8082 amitspring/medicure-app:2.0
